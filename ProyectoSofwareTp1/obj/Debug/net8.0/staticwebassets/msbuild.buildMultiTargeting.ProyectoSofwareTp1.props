@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProyectoSofwareTp1.props" />
+</Project>

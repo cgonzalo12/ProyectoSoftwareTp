@@ -1,0 +1,6 @@
+@ProyectoSofwareTp1_HostAddress = http://localhost:5228
+
+GET {{ProyectoSofwareTp1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
