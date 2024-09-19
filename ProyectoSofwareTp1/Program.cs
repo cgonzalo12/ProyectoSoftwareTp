@@ -46,6 +46,9 @@ builder.Services.AddScoped<IUserServices, UserServices>();
 builder.Services.AddScoped<IUserQuery, UserQuery>();
 builder.Services.AddScoped<IUserCommand, UserCommand>();
 
+builder.Services.AddScoped<IProyectServices, ProyectServices>();
+builder.Services.AddScoped<IProyectQuery, ProyectQuery>();
+builder.Services.AddScoped<IProyectCommand, ProyectCommand>();
 
 var app = builder.Build();
 

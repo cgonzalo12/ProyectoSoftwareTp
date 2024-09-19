@@ -13,3 +13,4 @@ C:\Users\capgo\OneDrive\Escritorio\Facultad\ProyectoSoftware\ProyectoSofwareTp1\
 C:\Users\capgo\OneDrive\Escritorio\Facultad\ProyectoSoftware\ProyectoSofwareTp1\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\capgo\OneDrive\Escritorio\Facultad\ProyectoSoftware\ProyectoSofwareTp1\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\capgo\OneDrive\Escritorio\Facultad\ProyectoSoftware\ProyectoSofwareTp1\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\capgo\OneDrive\Escritorio\Facultad\ProyectoSoftware\ProyectoSofwareTp1\Application\obj\Debug\net8.0\Application.sourcelink.json
