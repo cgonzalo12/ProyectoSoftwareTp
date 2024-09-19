@@ -72,6 +72,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ProyectoSofwareTp1.Controllers.ProyectController",
+    "Method": "CreateProyect",
+    "RelativePath": "api/v1/Proyect",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "proyectDTO",
+        "Type": "Application.DTOs.CreateProyectDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoSofwareTp1.Controllers.ProyectController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Proyect/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ProyectoSofwareTp1.Controllers.TaskStatusController",
     "Method": "GetAll",
     "RelativePath": "api/v1/TaskStatus",

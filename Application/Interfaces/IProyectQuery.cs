@@ -10,5 +10,7 @@ namespace Application.Interfaces
     public interface IProyectQuery
     {
         Task<List<Proyects>> GetAlProyects();
+
+        Task<Proyects> GetProyect(string id);
     }
 }

@@ -37,10 +37,7 @@ namespace Application.UseCase
             return client;
         }
 
-        public Task<Clients> DeleteClientt(int clientId)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public async Task<List<Clients>> GetAllClients()
         {

@@ -1,4 +1,5 @@
-﻿using Application.Interfaces;
+﻿using Application.DTOs;
+using Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ProyectoSofwareTp1.Controllers
@@ -24,5 +25,26 @@ namespace ProyectoSofwareTp1.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateProyect(CreateProyectDTO proyectDTO)
+        {
+            var result = await _services.CrearProyect(proyectDTO);
+            return new JsonResult(result) { StatusCode = 201 };
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(string id)
+        {
+            var result = await _services.GetById(id);
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(result);
+        }
+
+
+
     }
 }

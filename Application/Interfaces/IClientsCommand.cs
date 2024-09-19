@@ -10,7 +10,6 @@ namespace Application.Interfaces
     public interface IClientsCommand
     {
         Task InsertClient(Clients client);
-        Task RemoveClient(int clientId);
 
         Task GetAllClients();
 

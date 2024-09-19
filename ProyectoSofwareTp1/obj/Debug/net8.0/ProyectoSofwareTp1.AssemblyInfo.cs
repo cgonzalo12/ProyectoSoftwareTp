@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoSofwareTp1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c58b02d897343f213203289142cc80adb27933c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbf881d188bef69b97cab254e36087f5df2cc2ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoSofwareTp1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoSofwareTp1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,8 +20,20 @@ namespace Infraestructure.Querys
 
         public async Task<List<Proyects>> GetAlProyects()
         {
-           var listProyects = await _context.Proyects.ToListAsync();
+           var listProyects = await _context.Proyects
+                .Include(c=>c.Client)
+                .ToListAsync();
             return listProyects;
+        }
+
+        public async Task<Proyects> GetProyect(string id)
+        {
+            if (Guid.TryParse(id, out var proyecID))
+            {
+                var proyect = await _context.Proyects.FirstOrDefaultAsync(p => p.ProjectID == proyecID);
+                return proyect;
+            }
+            return null;
         }
     }
 }

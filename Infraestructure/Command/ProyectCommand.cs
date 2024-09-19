@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,13 @@ namespace Infraestructure.Command
         public async Task GetAllProyects()
         {
             await _context.Proyects.ToListAsync();
+        }
+
+        public async Task InsertProyect(Proyects proyect)
+        {
+            _context.Add(proyect);
+
+            await _context.SaveChangesAsync();
         }
     }
 }

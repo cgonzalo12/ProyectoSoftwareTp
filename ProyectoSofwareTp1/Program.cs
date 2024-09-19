@@ -23,7 +23,16 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+//referencia ciclica reparar esto!!!!
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        options.JsonSerializerOptions.WriteIndented = true;
+    });
+
 //dependence
+
 builder.Services.AddScoped<IClientServices, ClientsServices>();
 builder.Services.AddScoped<IClientsQuery,ClientsQuery>();
 builder.Services.AddScoped<IClientsCommand, ClientsCommand>();
@@ -51,6 +60,8 @@ builder.Services.AddScoped<IProyectQuery, ProyectQuery>();
 builder.Services.AddScoped<IProyectCommand, ProyectCommand>();
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
