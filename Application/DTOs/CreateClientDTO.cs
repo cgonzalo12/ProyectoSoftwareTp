@@ -9,7 +9,7 @@ namespace Application.DTOs
 {
     public class CreateClientDTO
     {
-       
+        public Guid ClientID { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         

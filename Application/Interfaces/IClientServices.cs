@@ -12,6 +12,8 @@ namespace Application.Interfaces
     {
         Task<Clients> CrearClient(CreateClientDTO clientDTO);
 
+        Task<Clients> DeleteClientt(int clientId);
+
         Task<List<Clients>> GetAllClients();
         Task<Clients> GetById(string clientId);
     }

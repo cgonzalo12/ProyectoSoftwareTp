@@ -25,7 +25,10 @@ namespace Infraestructure.Command
             await _context.SaveChangesAsync();
         }
 
-
+        public Task RemoveClient(int clientId)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task GetAllClients()
         {
